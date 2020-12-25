@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Naitan</title>
+</head>
+<body background="images/background.jpg">
+    
+    <!-- This is the header of the website which contains the logo and the heading of the website -->
+    <header>
+        <h1 align=center>
+          <!-- Adding logo using a image tag -->
+          <img width="70" alt="logo" height="70" src="images/logo.png">
+
+          <!-- Underlining the heading usign the u tag -->
+          <u>Aditya Naitan's Portfolio</u>
+        </h1>
+    </header>
+
+    <!-- hr tag to create a horizontal line between header and the form -->
+    <hr>
+
+    <!-- This is the about me section which contains some information about me -->
+    <div>
+        <h2>About me: </h2>
+        <p>
+            Hi everyone, my name is Aditya Naitan. I am currently in the 3rd year of my Bachelor in Technology Degree from University 
+            Institute of Technology, Shimla, in Computer Science Engineering. I have been tinkering with code since my 
+            first year. I love working on Web Apps, as well as tools and technologies related to Web Apps and I have spent many of my 
+            nights up on such projects. I also love to do competitive programming and I am preety good at data structure and algorithms.
+            By joining <em>30 Days of Web Development</em> program I am looking forward to improve my CSS and Javascript skills.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- I have used a table to show how good I am at some languages -->
+    <div>
+        <h2><u>My skills: </u></h2>
+
+        <table cellspacing="4" border="1">
+            <tr>
+                <th width="35%">Skills</th>
+                <th width="70%">Level</th>
+            </tr>
+            <tr>
+                <td align=center>Python3</td>
+                <td><img src="images/4star.png" alt="4 star" width="150" height="30"></td>
+            </tr>
+            <tr>
+                <td align=center>C</td>
+                <td><img src="images/4star.png" alt="4 star" width="150" height="30"></td>
+            </tr>
+            <tr>
+                <td align=center>C++</td>
+                <td><img src="images/3star.png" alt="3 star" width="150" height="30"></td>
+            </tr>
+            <tr>
+                <td align=center>HTML</td>
+                <td><img src="images/3star.png" alt="3 star" width="150" height="30"></td>
+            </tr>
+            <tr>
+                <td align=center>CSS</td>
+                <td><img src="images/2star.png" alt="2 star" width="150" height="30"></td>
+            </tr>
+            <tr>
+                <td align=center>Javascript</td>
+                <td><img src="images/2star.png" alt="2 star" width="150" height="30"></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <!-- This is the first Youtube video I ever uploaded -->
+
+    <div>
+        <h2><u>My first youtube video: </u></h2>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/W5N1MzLiH9Y"></iframe>
+    </div>
+
+    <hr>
+
+    <div>
+        <!-- form is created using the form tag, action specifies where to redirect after submission -->
+        <h2><u>Contact me: </u></h2>
+        <form action="thankyou.html">
+            <label for="first_name">First Name: </label>
+            <input type="text" id="first_name" required>
+            <br><br>
+            <label for="last_name" aria-label="left">Last Name: </label>
+            <input type="text" id="last_name" required>
+            <br><br>
+            <label for="email_id">Email: </label>
+            <input type="email" id="email_id" required>
+            <br><br>
+            <label for="number_input">Phone Number: </label>
+            <input type="number" id="number_input" required>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <hr>
+    
+    <footer>
+        <h4 align=center>Naitan's Production | © 2020. All Rights Reserved</h4>
+    </footer>
+</body>
+</html>
