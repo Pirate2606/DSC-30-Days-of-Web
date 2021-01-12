@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1>
+            Today
+        </h1>
+    </div>
+
+    <div class="box">
+        <ul class="myUL" id="testUL" style="list-style-type: none;">
+            <li>
+                <div class="item">
+                    <span class="close">×</span>
+                    <input type="checkbox" name="checkbox"></input>
+                    <p><strong>Hit the + button to add a new item.</strong></p>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span class="close">×</span>
+                    <input type="checkbox" name="checkbox"></input>
+                    <p><strong>Use the checkbox to mark an item as checked.</strong></p>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <span class="close">×</span>
+                    <input type="checkbox" name="checkbox"></input>
+                    <p><strong> Hit × to delete an item.</strong></p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="item">
+            <input type="text" name="newItem" placeholder="New Item" id="itemName" autocomplete="off">
+            <button class="plus-btn" type="submit" name="list" onclick="test()">+</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function test() {
+            if (document.getElementById("itemName").value === "") {
+                alert("Can't add an empty item.")
+            } else {
+                var div = document.createElement("DIV");
+                div.className = "item";
+                var txt = document.createElement("INPUT")
+                txt.type = "checkbox"
+                txt.name = "checkbox"
+                var para = document.createElement("P");
+                para.innerHTML = document.getElementById("itemName").value;
+                var span = document.createElement("SPAN");
+                var closeBtn = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(closeBtn);
+                div.appendChild(span)
+                div.appendChild(txt)
+                div.appendChild(para)
+                var li = document.createElement("li")
+                li.appendChild(div)
+                document.getElementById("testUL").appendChild(li)
+                document.getElementById("itemName").value = ""
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                        var div = this.parentElement;
+                        div.style.display = "none";
+                    }
+                }
+            }
+
+        }
+
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    Copyright 2021
+</footer>
+
+</html>
